@@ -53,11 +53,27 @@
     width: 20vw;
   }
 }
-@media (max-width: 320px) {
-  .contact {
-    height: 25%;
-  }
+@media (max-width: 480px) {
   .img {
-    width: 20vw;
+    width: 40vw;
+  }
+  .link {
+    font-size: 3vw;
+  }
+  .contact__container {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .contact__container-1 {
+    width: 50%;
+    height: 100%;
+    filter: drop-shadow(0 0 40px rgba(21, 233, 70, 0.5));
+    padding-left: 15vw;
+  }
+  .contact__container-2 {
+    width: 50%;
+    height: 100%;
+    filter: drop-shadow(0 0 40px rgba(21, 63, 233, 0.5));
+    padding-right: 15vw;
   }
 }/*# sourceMappingURL=Contact.css.map */

@@ -171,20 +171,95 @@
     }
 }
 
-@media (max-width:480px) {
-    .stroke-text{
-        -webkit-text-stroke-width: 0.5px
-    }
-    .service{
-        height: 25%;
-    }
-}
 
-@media (max-width:320px) {
+@media (max-width:480px) {
+
+    .checkbox{
+        display: none;
+    }
     .stroke-text{
         -webkit-text-stroke-width: 0.5px
     }
     .service{
-        height: 25%;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    
+       &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 100%;
+            padding: 2vw;
+            margin-bottom: 2vw;
+            &__left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                font-size: 3.5vw;
+                padding: 3.5vw;
+                color: var(--seccondPrimaryColor);
+                &-1{
+                    padding: 1.5vw;
+                }
+                &-2{
+                    padding: 1.5vw;
+                }
+                &-3{
+                    padding: 1.5vw;
+                }
+                 
+            }
+            &__midle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+                align-items: center;
+                font-size: 3.5vw;
+                padding: 3.5vw;
+                color: var(--seccondPrimaryColor);
+                &-1{
+                    padding: 1.5vw;
+                }
+                &-2{
+                    padding: 1.5vw;
+                }
+                &-3{
+                    padding: 1.5vw;
+                }
+                 
+                
+            }
+            &__right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 70%;
+                align-items: center;
+                font-size: 3.5vw;
+                padding: 3.5vw;
+                color: var(--seccondPrimaryColor);
+                &-1{
+                    padding: 1.5vw;
+                }
+                &-2{
+                    padding: 1.5vw;
+                }
+                &-3{
+                    padding: 1.5vw;
+                }
+                 
+        
+            }
+       }
     }
 }
