@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const OurPackage = () => {
   const transition = { type: "spring", duration: 0.5 };
   return (
-    <div className="package">
+    <div className="package" id="packages">
       <motion.div
         className="package__name"
         initial={{ right: "5vw" }}

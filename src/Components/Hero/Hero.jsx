@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const transition = { type: "spring", duration: 0.5 };
   return (
-    <motion.div className="hero">
+    <motion.div className="hero" id="hero">
       <motion.div className="hero__left-hero">
         <span className="hero__left-hero__stroke-text-1 stroke-text">SP</span>
         <span className="hero__left-hero__stroke-text-2">creations</span>

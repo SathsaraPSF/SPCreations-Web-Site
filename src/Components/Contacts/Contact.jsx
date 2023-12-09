@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export const Contact = () => {
   const transition = { type: "spring", duration: 0.5 };
   return (
-    <div className="contact">
+    <div className="contact" id="contactus">
       <motion.div
         className="contact__header"
         initial={{ left: "1vw" }}

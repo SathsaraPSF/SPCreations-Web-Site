@@ -6,7 +6,7 @@ import { motion, transform } from "framer-motion";
 const Service = () => {
   const transition = { type: "spring", duration: 3 };
   return (
-    <div className="service">
+    <div className="service" id="services">
       <motion.div
         className="service__topic"
         initial={{ left: "5vw" }}

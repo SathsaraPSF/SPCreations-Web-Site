@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import logo from "../../assests/logo.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -13,11 +14,28 @@ const Header = () => {
       >
         <img className="header__img" src={logo} alt="logo" />
       </motion.div>
+
       <ul className="header__menu-items">
-        <li className="header__menu-items__item">Home</li>
-        <li className="header__menu-items__item">Services</li>
-        <li className="header__menu-items__item">Packages</li>
-        <li className="header__menu-items__item">Contact us</li>
+        <li className="header__menu-items__item">
+          <Link to="hero" spy={true} smooth={true} duration={500} offset={50}>
+            Home
+          </Link>
+        </li>
+        <li className="header__menu-items__item">
+          <Link to="services" spy={true} smooth={true} duration={500}>
+            Services
+          </Link>
+        </li>
+        <li className="header__menu-items__item">
+          <Link to="packages" spy={true} smooth={true} duration={500}>
+            Packages
+          </Link>
+        </li>
+        <li className="header__menu-items__item">
+          <Link to="contactus" spy={true} smooth={true} duration={500}>
+            Contact us
+          </Link>
+        </li>
       </ul>
       <motion.button
         className="header__button"
