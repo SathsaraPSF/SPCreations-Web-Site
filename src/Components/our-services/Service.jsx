@@ -4,7 +4,7 @@ import checkbox from "../../assests/checkbox.png";
 import { motion, transform } from "framer-motion";
 
 const Service = () => {
-  const transition = { type: "spring", duration: 0.5 };
+  const transition = { type: "spring", duration: 3 };
   return (
     <div className="service">
       <motion.div
