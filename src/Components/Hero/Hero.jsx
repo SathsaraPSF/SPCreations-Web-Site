@@ -4,19 +4,26 @@ import image from "../../assests/image.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 };
   return (
     <motion.div className="hero">
-      <motion.div
-        className="hero__left-hero"
-        initial={{ opacity: 0.1 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1.5 }}
-      >
+      <motion.div className="hero__left-hero">
         <span className="hero__left-hero__stroke-text-1 stroke-text">SP</span>
         <span className="hero__left-hero__stroke-text-2">creations</span>
-        <span className="hero__left-hero__slogen">
-          Design Dreams,Spreading Smiles
-        </span>
+
+        <div className="hero__left-hero__slogen">
+          <motion.div
+            className="hero__left-hero__slogen__heighlight"
+            initial={{ left: "10vw" }}
+            whileInView={{ left: "33.5vw" }}
+            transition={{ ...transition, type: "tween", stiffness: 40 }}
+          ></motion.div>
+          <span className="hero__left-hero__slogen__text">
+            {" "}
+            Design Dreams,Spreading Smiles{" "}
+          </span>
+        </div>
+
         <div className="hero__left-hero__buttons">
           <motion.button
             className="hero__left-hero__buttons-1"

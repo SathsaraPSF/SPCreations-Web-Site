@@ -1,15 +1,24 @@
 import React from "react";
 import "./Service.css";
 import checkbox from "../../assests/checkbox.png";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 
 const Service = () => {
+  const transition = { type: "spring", duration: 0.5 };
   return (
     <div className="service">
-      <div className="service__topic">
+      <motion.div
+        className="service__topic"
+        initial={{ left: "5vw" }}
+        whileInView={{
+          left: "50%",
+          x: "-50%",
+          transition: { ...transition, type: "spring", stiffness: 40 },
+        }}
+      >
         <span className="service__topic-2 ">Get our</span>
         <span className="stroke-text">&nbsp;Service</span>
-      </div>
+      </motion.div>
 
       <div className="service__container">
         <div className="service__container__left card">
@@ -54,7 +63,6 @@ const Service = () => {
         <div className="service__container__midle card">
           <motion.div
             className="service__container__midle-1"
-            className="service__container__left-3"
             whileHover={{
               scale: 1.1,
               originX: 0,
@@ -67,7 +75,6 @@ const Service = () => {
           </motion.div>
           <motion.div
             className="service__container__midle-2"
-            className="service__container__left-3"
             whileHover={{
               scale: 1.1,
               originX: 0,

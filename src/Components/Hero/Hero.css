@@ -26,14 +26,26 @@
 }
 .hero__left-hero__slogen {
   display: flex;
-  font-size: 1.5vw;
-  font-weight: 600;
   color: var(--primaryColor);
   background-color: white;
   width: 30vw;
   height: 3vw;
   align-items: center;
   justify-content: center;
+  border-radius: 10vw;
+}
+.hero__left-hero__slogen__text {
+  z-index: 2;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.hero__left-hero__slogen__heighlight {
+  z-index: 1;
+  position: absolute;
+  background-color: var(--seccondPrimaryColor);
+  width: 5vw;
+  height: 2.5vw;
+  left: 34vw;
   border-radius: 10vw;
 }
 .hero__left-hero__buttons {

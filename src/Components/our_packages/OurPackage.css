@@ -8,6 +8,7 @@
   background-color: var(--primaryColor);
 }
 .package__name {
+  position: absolute;
   height: 30%;
   font-size: 5vw;
 }
@@ -25,6 +26,7 @@
   height: 50%;
   width: 100%;
   padding: 1vw;
+  margin-top: 10vw;
   margin-bottom: 2vw;
 }
 .package__item-2 {
