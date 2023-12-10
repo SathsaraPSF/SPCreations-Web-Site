@@ -20,7 +20,7 @@ import image_6 from "../../assests/img_6.jpg";
 import image_7 from "../../assests/img_7.jpg";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 const Slider = () => {
   const transition = { type: "spring", duration: 5 };
@@ -51,7 +51,12 @@ const Slider = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        loop={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
         className="mySwiper"
       >
         <SwiperSlide>
