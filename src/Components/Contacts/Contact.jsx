@@ -8,14 +8,7 @@ export const Contact = () => {
   const transition = { type: "spring", duration: 5 };
   return (
     <div className="contact" id="contactus">
-      <motion.div
-        className="contact__header"
-        initial={{ right: "3vw" }}
-        whileInView={{
-          right: "5.5vw",
-          transition: { ...transition, type: "spring" },
-        }}
-      >
+      <motion.div className="contact__header">
         <span className="stroke-text">Contact</span>
         <span className="contact__header-2"> us</span>
         <span className="contact__header-3"> to get more details</span>

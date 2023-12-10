@@ -9,12 +9,12 @@ const Service = () => {
     <div className="service" id="services">
       <motion.div
         className="service__topic"
-        initial={{ left: "5vw" }}
-        whileInView={{
-          left: "50%",
-          x: "-50%",
-          transition: { ...transition, type: "spring" },
-        }}
+        // initial={{ left: "5vw" }}
+        // whileInView={{
+        //   left: "50%",
+        //   x: "-50%",
+        //   transition: { ...transition, type: "spring" },
+        // }}
       >
         <span className="service__topic-2 ">Get our</span>
         <span className="stroke-text">&nbsp;Service</span>

@@ -2,7 +2,10 @@
   --primaryColor: #000B29;
   --seccondPrimaryColor: #AD9551;
   --headerGradient: linear-gradient(180deg, #172969 0%, rgba(0, 11, 41, 0.00) 100%);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: 'Kurale', serif; */
+  font-family: 'Kurale', serif; 
+  /* font-family: 'Lora', serif; */
 }
 
 ::-webkit-scrollbar {
@@ -18,8 +21,8 @@ body {
 
 .stroke-text{
   color: transparent;
- -webkit-text-stroke: rgb(255, 255, 255);
- -webkit-text-stroke-width: 2px;
+ -webkit-text-stroke: white;
+ -webkit-text-stroke-width: 2px; 
 }
 
 .card{

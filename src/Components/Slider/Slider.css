@@ -1,14 +1,17 @@
 .Header {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 5vw;
   text-transform: uppercase;
   text-align: center;
+  latter-spacing: 2vw;
   padding-top: 2vw;
 }
 
 .swiper {
   width: 100%;
-  padding-top: 12vw;
+  padding-top: 5vw;
   padding-bottom: 8vw;
 }
 

@@ -9,7 +9,9 @@
   background-color: var(--primaryColor);
 }
 .package__name {
-  position: absolute;
+  display: flex;
+  gap: 1.5vw;
+  align-items: center;
   height: 30%;
   font-size: 5vw;
 }
@@ -26,8 +28,8 @@
   justify-content: center;
   width: 100%;
   padding: 1vw;
-  margin-top: 10vw;
   margin-bottom: 2vw;
+  padding-top: 5vw;
 }
 .package__item-2 {
   display: flex;

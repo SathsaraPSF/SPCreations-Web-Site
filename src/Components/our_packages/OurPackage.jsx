@@ -21,13 +21,13 @@ export const OurPackage = () => {
     <div className="package" id="packages">
       <motion.div
         className="package__name"
-        initial={{ left: "1vw" }}
-        whileInView={{
-          left: "15vw",
-          transition: { ...transition, type: "spring" },
-        }}
+        // initial={{ left: "1vw" }}
+        // whileInView={{
+        //   left: "15vw",
+        //   transition: { ...transition, type: "spring" },
+        // }}
       >
-        <span className="package__name-1">Take</span>
+        <span className="package__name-1">Take a</span>
         <span className="stroke-text"> Package</span>
         <span className="package__name-3"> & be happy</span>
       </motion.div>
