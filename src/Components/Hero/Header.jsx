@@ -26,6 +26,12 @@ const Header = () => {
             Services
           </Link>
         </li>
+
+        <li className="header__menu-items__item">
+          <Link to="gallery" spy={true} smooth={true} duration={500}>
+            Gallery
+          </Link>
+        </li>
         <li className="header__menu-items__item">
           <Link to="packages" spy={true} smooth={true} duration={500}>
             Packages

@@ -1,0 +1,25 @@
+.Header{
+    position: absolute;
+    font-size: 5vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
