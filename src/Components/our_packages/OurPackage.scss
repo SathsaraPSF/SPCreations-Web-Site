@@ -24,7 +24,6 @@
         flex-direction: row;
         gap: 2vw;
         justify-content: center;
-        height: 50%;
         width: 100%;
         padding: 1vw;
         margin-top: 10vw;
@@ -35,7 +34,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width:30%;
+            width:25%;
             height: 50vw;
             &__price{
                 display: flex;
@@ -46,12 +45,12 @@
                 padding-top: 5vw;
 
                 &-1{
-                    font-size: 2vw;
+                    font-size: 2.5vw;
                     text-align: center;
                 }
                 
                 &-2{
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                     text-align: center;
                     text-shadow: 0 0 0.5em var(--seccondPrimaryColor);
                 }
@@ -87,7 +86,7 @@
             width:25%;
             height: 50vw;
             position: relative;
-            transform: perspective(0.5px) rotateY(-0.03deg);
+            transform: perspective(0.5px) rotateY(-0.02deg);
         }
 
 

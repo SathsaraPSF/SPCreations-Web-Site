@@ -4,7 +4,19 @@ import checkbox from "../../assests/checkbox.png";
 import { motion } from "framer-motion";
 
 export const OurPackage = () => {
-  const transition = { type: "spring", duration: 0.5 };
+  const transition = { type: "spring", duration: 5 };
+
+  const sendMessage = () => {
+    let package_name = document.getElementById("package-name").innerText;
+    console.log(package_name);
+    window.open(
+      `https://wa.me/message/L56X7SMOIJHUL1?text=${encodeURIComponent(
+        package_name
+      )}`,
+      "_blank"
+    );
+  };
+
   return (
     <div className="package" id="packages">
       <motion.div
@@ -13,7 +25,7 @@ export const OurPackage = () => {
         whileInView={{
           right: "5vw",
           left: "17vw",
-          transition: { ...transition, type: "spring", stiffness: 40 },
+          transition: { ...transition, type: "spring" },
         }}
       >
         <span className="package__name-1">Take</span>
@@ -22,6 +34,7 @@ export const OurPackage = () => {
       </motion.div>
 
       <div className="package__item">
+        {/* Package reflection left */}
         <div className="package__item-1 card pacakge-card  ">
           <div className="package__item-2__price">
             <span className="package__item-2__price-1"> RS.1250/= </span>
@@ -31,15 +44,32 @@ export const OurPackage = () => {
           <div className="package__item-2__items">
             <div className="package__item-2__items-1">
               <img src={checkbox} className="checkbox" />
-              <span>Business cards</span>
+              <span>
+                Thank you cards{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  50
+                </strong>
+              </span>
             </div>
+
             <div className="package__item-2__items-2">
               <img src={checkbox} className="checkbox" />
-              <span>Thank you cards</span>
+              <span>
+                Logo stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  60
+                </strong>
+              </span>
             </div>
+
             <div className="package__item-2__items-3">
               <img src={checkbox} className="checkbox" />
-              <span>Display cards</span>
+              <span>
+                Address stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  30
+                </strong>
+              </span>
             </div>
           </div>
 
@@ -48,32 +78,83 @@ export const OurPackage = () => {
           </button>
         </div>
 
+        {/* Package */}
         <div className="package__item-2 card ">
-          <div className="package__item-2__price">
+          <div id="package-name" className="package__item-2__price">
             <span className="package__item-2__price-1"> RS.1250/= </span>
             <span className="package__item-2__price-2">Special package</span>
           </div>
 
           <div className="package__item-2__items">
-            <div className="package__item-2__items-1">
+            <motion.div
+              className="package__item-2__items-1"
+              whileHover={{
+                scale: 1.1,
+                originX: 0,
+                color: "#f8e112",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <img src={checkbox} className="checkbox" />
-              <span>Business cards</span>
-            </div>
-            <div className="package__item-2__items-2">
+              <span>
+                Thank you cards{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  50
+                </strong>
+              </span>
+            </motion.div>
+            <motion.div
+              className="package__item-2__items-2"
+              whileHover={{
+                scale: 1.1,
+                originX: 0,
+                color: "#f8e112",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <img src={checkbox} className="checkbox" />
-              <span>Thank you cards</span>
-            </div>
-            <div className="package__item-2__items-3">
+              <span>
+                Logo stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  60
+                </strong>
+              </span>
+            </motion.div>
+            <motion.div
+              className="package__item-2__items-3"
+              whileHover={{
+                scale: 1.1,
+                originX: 0,
+                color: "#f8e112",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <img src={checkbox} className="checkbox" />
-              <span>Display cards</span>
-            </div>
+              <span>
+                Address stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  30
+                </strong>
+              </span>
+            </motion.div>
           </div>
 
-          <button className="package__item-2__button pack-button">
+          <motion.button
+            className="package__item-2__button pack-button"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgba(255,255,255)",
+              boxShadow: "0px 0px 3px rgba(255,255,255)",
+            }}
+            onClick={() => {
+              sendMessage();
+            }}
+          >
             Get now
-          </button>
+          </motion.button>
         </div>
 
+        {/* Package reflection right */}
         <div className="package__item-3 card pacakge-card">
           <div className="package__item-2__price">
             <span className="package__item-2__price-1"> RS.1250/= </span>
@@ -83,15 +164,30 @@ export const OurPackage = () => {
           <div className="package__item-2__items">
             <div className="package__item-2__items-1">
               <img src={checkbox} className="checkbox" />
-              <span>Business cards</span>
+              <span>
+                Thank you cards{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  50
+                </strong>
+              </span>
             </div>
             <div className="package__item-2__items-2">
               <img src={checkbox} className="checkbox" />
-              <span>Thank you cards</span>
+              <span>
+                Logo stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  60
+                </strong>
+              </span>
             </div>
             <div className="package__item-2__items-3">
               <img src={checkbox} className="checkbox" />
-              <span>Display cards</span>
+              <span>
+                Address stickers{" "}
+                <strong style={{ color: "var(--seccondPrimaryColor)" }}>
+                  30
+                </strong>
+              </span>
             </div>
           </div>
 

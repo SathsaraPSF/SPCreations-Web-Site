@@ -4,7 +4,7 @@ import checkbox from "../../assests/checkbox.png";
 import { motion, transform } from "framer-motion";
 
 const Service = () => {
-  const transition = { type: "spring", duration: 3 };
+  const transition = { type: "spring", duration: 5 };
   return (
     <div className="service" id="services">
       <motion.div
@@ -13,7 +13,7 @@ const Service = () => {
         whileInView={{
           left: "50%",
           x: "-50%",
-          transition: { ...transition, type: "spring", stiffness: 40 },
+          transition: { ...transition, type: "spring" },
         }}
       >
         <span className="service__topic-2 ">Get our</span>

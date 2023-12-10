@@ -5,7 +5,7 @@ import facebook from "../../assests/facebook.png";
 import { motion } from "framer-motion";
 
 export const Contact = () => {
-  const transition = { type: "spring", duration: 0.5 };
+  const transition = { type: "spring", duration: 5 };
   return (
     <div className="contact" id="contactus">
       <motion.div
@@ -13,7 +13,7 @@ export const Contact = () => {
         initial={{ left: "1vw" }}
         whileInView={{
           left: "5vw",
-          transition: { ...transition, type: "spring", stiffness: 40 },
+          transition: { ...transition, type: "spring" },
         }}
       >
         <span className="stroke-text">Contact</span>

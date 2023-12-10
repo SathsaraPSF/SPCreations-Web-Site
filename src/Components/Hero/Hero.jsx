@@ -4,7 +4,7 @@ import image from "../../assests/image.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const transition = { type: "spring", duration: 0.5 };
+  const transition = { type: "spring", duration: 5 };
   return (
     <motion.div className="hero" id="hero">
       <motion.div className="hero__left-hero">
