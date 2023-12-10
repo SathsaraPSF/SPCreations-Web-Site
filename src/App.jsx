@@ -5,6 +5,7 @@ import Service from "./Components/our-services/Service";
 import { OurPackage } from "./Components/our_packages/OurPackage";
 import { Contact } from "./Components/Contacts/Contact";
 import Slider from "./Components/Slider/Slider";
+import FooterComponent from "./Components/footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Slider />
       <OurPackage />
       <Contact />
+      <FooterComponent />
     </div>
   );
 }

@@ -12,7 +12,7 @@ export const Contact = () => {
         className="contact__header"
         initial={{ right: "3vw" }}
         whileInView={{
-          right: "5vw",
+          right: "5.5vw",
           transition: { ...transition, type: "spring" },
         }}
       >

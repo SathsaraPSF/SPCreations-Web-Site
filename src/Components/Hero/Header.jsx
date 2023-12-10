@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Header = () => {
+  const sendMessage = () => {
+    let package_name = document.getElementById("package-name").innerText;
+    console.log(package_name);
+    window.open(`https://wa.me/message/L56X7SMOIJHUL1`, "_blank");
+  };
   return (
     <div className="header">
       <motion.div
@@ -49,6 +54,9 @@ const Header = () => {
           scale: 1.1,
           textShadow: "0px 0px 8px rgba(255,255,255)",
           boxShadow: "0px 0px 3px rgba(255,255,255)",
+        }}
+        onClick={() => {
+          sendMessage();
         }}
       >
         Join us
