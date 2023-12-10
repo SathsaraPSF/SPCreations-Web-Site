@@ -21,10 +21,9 @@ export const OurPackage = () => {
     <div className="package" id="packages">
       <motion.div
         className="package__name"
-        initial={{ right: "5vw" }}
+        initial={{ left: "1vw" }}
         whileInView={{
-          right: "5vw",
-          left: "17vw",
+          left: "15vw",
           transition: { ...transition, type: "spring" },
         }}
       >

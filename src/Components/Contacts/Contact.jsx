@@ -10,9 +10,9 @@ export const Contact = () => {
     <div className="contact" id="contactus">
       <motion.div
         className="contact__header"
-        initial={{ left: "1vw" }}
+        initial={{ right: "3vw" }}
         whileInView={{
-          left: "5vw",
+          right: "5vw",
           transition: { ...transition, type: "spring" },
         }}
       >
