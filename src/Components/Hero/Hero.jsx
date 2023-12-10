@@ -24,7 +24,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <div className="hero__left-hero__buttons">
+        {/* <div className="hero__left-hero__buttons">
           <motion.button
             className="hero__left-hero__buttons-1"
             whileHover={{
@@ -45,7 +45,7 @@ const Hero = () => {
           >
             Learn more
           </motion.button>
-        </div>
+        </div> */}
       </motion.div>
 
       <div className="hero__right-hero">
