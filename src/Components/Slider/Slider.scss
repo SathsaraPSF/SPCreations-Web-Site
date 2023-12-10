@@ -7,15 +7,15 @@
 
 .swiper {
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top:9vw;
+    padding-bottom: 8vw;
   }
   
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 30vw;
   }
   
   .swiper-slide img {
@@ -23,3 +23,15 @@
     width: 100%;
   }
   
+  @media (max-width:480px) {
+    .stroke-text{
+       -webkit-text-stroke-width: 0.1px;
+      }
+
+      .swiper-slide {
+        width: 45vw;
+        height: 45vw;
+      }
+      
+
+    }
