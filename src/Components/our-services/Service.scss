@@ -16,7 +16,7 @@
        justify-content: center;
         height: 20%;
         top: 45vw;
-        padding-top: 2vw;
+        padding-top: 1vw;
         font-size: 5vw;
         text-transform: uppercase;
 
@@ -31,6 +31,7 @@
         justify-content: center;
         height: 60%;
         width: 100%;
+        margin-top: 8vw;
         padding: 2vw;
         &__left{
             display: flex;
@@ -206,10 +207,10 @@
         justify-content: center;
 
         &__topic{
-            position: absolute;
+            display: flex;
             height: 20%;
-            top: 58vw;
             font-size: 5vw;
+            margin-top: -4vw;
             text-transform: uppercase;
     
             &-2{

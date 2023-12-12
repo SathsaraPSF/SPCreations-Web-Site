@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import whatsapp from "../../assests/WA.png";
 import facebook from "../../assests/facebook.png";
+import insta from "../../assests/insta.png";
 import { motion } from "framer-motion";
 
 export const Contact = () => {
@@ -23,13 +24,13 @@ export const Contact = () => {
           }}
           whileTap={{ scale: 0.9 }}
         >
-          <img className="img" src={whatsapp}></img>
           <span>
             <a className="link" href="https://wa.me/message/L56X7SMOIJHUL1">
-              0772253533
+              <img className="img" src={whatsapp}></img>
             </a>
           </span>
         </motion.div>
+
         <motion.div
           className="contact__container-2 contact-containers"
           whileHover={{
@@ -38,13 +39,27 @@ export const Contact = () => {
           }}
           whileTap={{ scale: 0.9 }}
         >
-          <img className="img" src={facebook}></img>
+          <span>
+            <a className="link" href="https://wa.me/message/L56X7SMOIJHUL1">
+              <img className="img" src={insta}></img>
+            </a>
+          </span>
+        </motion.div>
+
+        <motion.div
+          className="contact__container-3 contact-containers"
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 1 },
+          }}
+          whileTap={{ scale: 0.9 }}
+        >
           <span>
             <a
               className="link"
               href="https://www.facebook.com/profile.php?id=100093541017677&mibextid=ZbWKwL"
             >
-              @S&P Creations
+              <img className="img" src={facebook}></img>
             </a>
           </span>
         </motion.div>

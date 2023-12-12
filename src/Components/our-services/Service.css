@@ -15,7 +15,7 @@
   justify-content: center;
   height: 20%;
   top: 45vw;
-  padding-top: 2vw;
+  padding-top: 1vw;
   font-size: 5vw;
   text-transform: uppercase;
 }
@@ -29,6 +29,7 @@
   justify-content: center;
   height: 60%;
   width: 100%;
+  margin-top: 8vw;
   padding: 2vw;
 }
 .service__container__left {
@@ -184,10 +185,10 @@
     justify-content: center;
   }
   .service__topic {
-    position: absolute;
+    display: flex;
     height: 20%;
-    top: 58vw;
     font-size: 5vw;
+    margin-top: -4vw;
     text-transform: uppercase;
   }
   .service__topic-2 {
