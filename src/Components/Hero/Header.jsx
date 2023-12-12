@@ -40,13 +40,13 @@ const Header = () => {
         <div
           style={{
             backgroundColor: "var(--seccondPrimaryColor)",
-            width: "4vw",
+            width: "5vw",
             display: "flex",
             justifyContent: "center",
             padding: "2vw",
             borderRadius: "1vw",
             position: "fixed",
-            left: "83vw",
+            left: "80vw",
             top: "4.5vw",
             zIndex: "99",
           }}
@@ -56,7 +56,7 @@ const Header = () => {
             onClick={() => setMenuOpend(true)}
             style={{
               width: "6vw",
-              height: "6vw",
+              height: "8vw",
             }}
           />
         </div>
