@@ -18,6 +18,9 @@ import image_4 from "../../assests/img_4.png";
 import image_5 from "../../assests/img_5.jpg";
 import image_6 from "../../assests/img_6.jpg";
 import image_7 from "../../assests/img_7.jpg";
+import image_8 from "../../assests/img_8.jpg";
+import image_9 from "../../assests/img_9.jpg";
+import image_10 from "../../assests/img_10.jpg";
 
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
@@ -79,6 +82,15 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={image_7} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image_8} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image_9} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image_10} />
         </SwiperSlide>
       </Swiper>
     </>
