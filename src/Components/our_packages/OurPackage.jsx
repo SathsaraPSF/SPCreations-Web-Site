@@ -28,7 +28,7 @@ export const OurPackage = () => {
         // }}
       >
         <span className="package__name-1">Take a</span>
-        <span className="stroke-text"> Package</span>
+        <span className="main-headers"> Package</span>
         <span className="package__name-3"> & be happy</span>
       </motion.div>
 

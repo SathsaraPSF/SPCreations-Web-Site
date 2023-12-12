@@ -27,7 +27,7 @@ const Slider = () => {
   return (
     <>
       <motion.div
-        className="Header stroke-text"
+        className="Header main-headers"
         initial={{ right: "3vw" }}
         whileInView={{
           right: "5vw",

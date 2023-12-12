@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <div className="contact" id="contactus">
       <motion.div className="contact__header">
-        <span className="stroke-text">Contact</span>
+        <span className="main-headers">Contact</span>
         <span className="contact__header-2"> us</span>
         <span className="contact__header-3"> to get more details</span>
       </motion.div>

@@ -17,7 +17,7 @@ const Service = () => {
         // }}
       >
         <span className="service__topic-2 ">Get our</span>
-        <span className="stroke-text">&nbsp;Service</span>
+        <span className="main-headers">&nbsp;Service</span>
       </motion.div>
 
       <div className="service__container">
