@@ -30,7 +30,7 @@ const Header = () => {
     <div className="header">
       <motion.div
         initial={{ y: -250 }}
-        animate={{ y: -10 }}
+        animate={{ y: -1 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
       >
         <img className="header__img" src={logo} alt="logo" />
@@ -47,7 +47,7 @@ const Header = () => {
             borderRadius: "1vw",
             position: "fixed",
             left: "90vw",
-            top: "12px",
+            top: "5vw",
             zIndex: "99",
           }}
         >
