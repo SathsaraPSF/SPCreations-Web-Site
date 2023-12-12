@@ -47,6 +47,7 @@ const Header = () => {
             borderRadius: "1vw",
             position: "fixed",
             left: "80vw",
+            marginTop: "1vw",
             top: "4.5vw",
             zIndex: "99",
           }}
