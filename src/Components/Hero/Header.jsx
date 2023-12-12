@@ -46,8 +46,8 @@ const Header = () => {
             padding: "2vw",
             borderRadius: "1vw",
             position: "fixed",
-            left: "90vw",
-            top: "5vw",
+            left: "83vw",
+            top: "4.5vw",
             zIndex: "99",
           }}
         >
