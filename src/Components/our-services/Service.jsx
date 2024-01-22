@@ -7,18 +7,10 @@ const Service = () => {
   const transition = { type: "spring", duration: 5 };
   return (
     <div className="service" id="services">
-      <motion.div
-        className="service__topic"
-        // initial={{ left: "5vw" }}
-        // whileInView={{
-        //   left: "50%",
-        //   x: "-50%",
-        //   transition: { ...transition, type: "spring" },
-        // }}
-      >
+      <div className="service__topic">
         <span className="service__topic-2 ">Get our</span>
         <span className="main-headers">&nbsp;Service</span>
-      </motion.div>
+      </div>
 
       <div className="service__container">
         <div className="service__container__left card">
