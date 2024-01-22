@@ -111,7 +111,6 @@
     background-color: var(--primaryColor);
   }
   .service__topic {
-    position: absolute;
     height: 20%;
     top: 50.5vw;
     font-size: 5vw;
@@ -165,6 +164,16 @@
   .service {
     height: 30%;
   }
+  .service__topic {
+    display: flex;
+    height: 20%;
+    font-size: 5vw;
+    margin-top: -5vw;
+    text-transform: uppercase;
+  }
+  .service__topic-2 {
+    color: var(--seccondPrimaryColor);
+  }
 }
 @media (max-width: 480px) {
   .checkbox {
@@ -174,7 +183,7 @@
     -webkit-text-stroke-width: 0.5px;
   }
   .service {
-    margin-top: 2vw;
+    margin-top: 7vw;
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -185,7 +194,6 @@
     display: flex;
     height: 20%;
     font-size: 5vw;
-    margin-top: -5vw;
     text-transform: uppercase;
   }
   .service__topic-2 {
@@ -200,7 +208,7 @@
     height: 60%;
     width: 100%;
     padding: 2vw;
-    margin-top: 7vw;
+    margin-top: -1vw;
     margin-bottom: 2vw;
   }
   .service__container__left {
